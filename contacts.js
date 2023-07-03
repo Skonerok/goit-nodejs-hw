@@ -4,9 +4,6 @@ const { nanoid } = require("nanoid");
 
 const contactsPath = path.join(__dirname, "db/contacts.json");
 
-// fs.readFile(filename, [options]) - читання файлу
-// fs.writeFile(filename, data, [options]) - запис файлу
-
 const listContacts = async () => {
     const data = await fs.readFile(contactsPath);
     
